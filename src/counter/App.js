@@ -13,12 +13,12 @@ function App() {
 
     if (clockOn) {
       // setCounter(counter++)
-      interval.current = setInterval(function inter(){ setCounter(counter++);return inter;}(), 1000) // interval.current = setInterval(() => setCounter(counter++), 1000)
+      interval.current = setInterval(function inter() { setCounter(counter++); return inter; }(), 1000) // interval.current = setInterval(() => setCounter(counter++), 1000)
     } else {
       setCounter(0)
       clearInterval(interval.current);
     }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [clockOn])
 
 
@@ -27,6 +27,10 @@ function App() {
 
       <div className='navBar'>
         <span className='title'>TESTING</span>
+      </div>
+
+      <div>
+        <h1>Testing</h1>
       </div>
 
       <div style={{ position: 'absolute', margin: '0', padding: '0' }}>
