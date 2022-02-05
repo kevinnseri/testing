@@ -34,11 +34,10 @@ body {
   height: 400px;
   border-radius: 50%;
   cursor: pointer;
-  background-color:  rgba(248, 196, 128, 0.671);
+  background-color: rgba(248, 196, 128, 0.671);
   border: 2px solid rgb(207, 164, 107);
   align-items: center;
   justify-content: center;
-  
 
   &:hover {
     background-color: rgb(248, 196, 128);
