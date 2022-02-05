@@ -28,7 +28,7 @@ function App() {
       <div className='navBar'>
         <span className='title'>TESTING</span>
       </div>
-<h1>hola</h1>
+
       <div style={{ position: 'absolute', margin: '0', padding: '0' }}>
         <button
           className='counterButton'
