@@ -13,12 +13,12 @@ function App() {
 
     if (clockOn) {
       // setCounter(counter++)
-      interval.current = setInterval(function inter(){ setCounter(counter++);return inter;}(), 1000) // interval.current = setInterval(() => setCounter(counter++), 1000)
+      interval.current = setInterval(function inter() { setCounter(counter++); return inter; }(), 1000) // interval.current = setInterval(() => setCounter(counter++), 1000)
     } else {
       setCounter(0)
       clearInterval(interval.current);
     }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [clockOn])
 
 
